@@ -1,0 +1,8 @@
+.location{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+.spaces{
+  margin-right: 20px;
+}

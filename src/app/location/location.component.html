@@ -1,0 +1,35 @@
+<div class="location">
+  <div class="spaces">
+    <mat-form-field appearance="outline" >
+     <mat-label>Ülke</mat-label>
+     <mat-select [(ngModel)]="selectedCountryId" (ngModelChange)="onChange($event)">
+       <mat-option *ngFor="let country of countries" [value]="country.UlkeID">
+         {{country.UlkeAdi}}
+       </mat-option>
+     </mat-select>
+   </mat-form-field>
+ </div>
+ <div class="spaces" *ngIf="selectedCountryId != undefined">
+   <mat-form-field appearance="outline">
+     <mat-label>Şehir</mat-label>
+     <mat-select [(ngModel)]="selectedCityId" (ngModelChange)="onChange($event)">
+       <mat-option *ngFor="let city of cities" [value]="selectedCountryId === '2' ? city.sehirID : city.SehirID">
+         {{selectedCountryId === '2' ? city.sehirAdi : city.SehirAdi}}
+       </mat-option>
+     </mat-select>
+   </mat-form-field>
+ </div>
+ <div *ngIf="selectedCityId != undefined">
+  <mat-form-field appearance="outline">
+    <mat-label>İlçe</mat-label>
+    <mat-select [(ngModel)]="selectedDistrictId" (ngModelChange)="onChange($event)">
+      <mat-option *ngFor="let district of districts" [value]="district.IlceID">
+        {{district.IlceAdi}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+</div>
+<div *ngIf="selectedDistrictId != undefined">
+  <app-show-time-to-pray [timesForPraying] = "prayTime" [timeToPrayDaily]="dailyPraytime" ></app-show-time-to-pray>
+</div>

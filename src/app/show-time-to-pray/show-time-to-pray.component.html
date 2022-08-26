@@ -1,0 +1,123 @@
+<div class="container">
+  <div class="row">
+    <mat-card style="margin: 20px;
+    text-align: center;">
+      <mat-card-title>{{timesForPraying[0][0]}}<span style="margin-left: 10px;">{{ time | date: '	HH:mm:ss ' }}</span></mat-card-title>
+    </mat-card>
+    <div class="col-md-2 col-sm-6" *ngFor="let item of timeToPrayDaily; let i = index">
+      <mat-card>
+        <mat-card-title>{{times[i]}}</mat-card-title>
+        <mat-card-content>{{item}}</mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div>
+    <mat-card style="margin: 20px;
+    text-align: center;">
+      <mat-card-title>30 Günlük Görünüm</mat-card-title>
+    </mat-card>
+  </div>
+  <div>
+    <table>
+      <tr>
+        <th>Tarih</th>
+        <th>İmsak</th>
+        <th>Güneş</th>
+        <th>Öğle</th>
+        <th>İkindi</th>
+        <th>Akşam</th>
+        <th>Yatsı</th>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[1]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[2]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[3]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[4]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[5]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[6]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[7]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[8]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[9]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[10]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[11]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[12]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[13]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[14]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[15]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[17]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[18]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[19]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[20]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[21]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[22]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[23]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[24]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[25]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[26]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[27]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[28]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[29]">{{item}}</td>
+      </tr>
+      <tr>
+        <td *ngFor="let item of timesForPraying[30]">{{item}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
